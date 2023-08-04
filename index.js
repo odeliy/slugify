@@ -14,7 +14,7 @@ window.addEventListener('paste', (event) => {
 	}
 
 	navigator.clipboard.writeText(clipboard).then(() => {
-		resultBox.innerHTML += 'preview: ' + clipboard
+		resultBox.innerHTML += '<b>Preview: </b>' + clipboard
 		resultBox.appendChild(br)
 	})
 })
